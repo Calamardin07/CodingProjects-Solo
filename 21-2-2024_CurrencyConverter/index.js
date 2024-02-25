@@ -26,7 +26,14 @@ const currenciesFont = {
     Colon: "colon-coin"
   };
 
-fetch
+async function getRate() {
+    const response = await fetch("https://api.currencyapi.com/v3/latest?apikey=cur_live_hTp1NrWxrs4HYIfYQfJGyKsI4S55mutGx4l2dEHc");
+    var currencyRate = await response.json();
+    return currencyRate
+}
+
+let rates = getRate()
+console.log(rates)
 
 
 /**

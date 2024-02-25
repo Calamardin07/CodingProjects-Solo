@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{padding:0px; margin:0px;font-family:"Orbitron"; font-size:50;}
+
+.container{
+    background-color: rgb(161, 161, 161);
+    position: absolute;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items: center;
+    display:flex;
+}
+
+.main_body{
+    background-color: rgb(128, 128, 128);
+    margin:auto;
+    border-radius: 30px;
+    position: absolute;
+    border: 2px solid rgb(120,120,120);
+    width:750px;
+    height:600px;
+    max-width:90%;
+    max-height:90%;
+    justify-content: center;
+}
+
+.calculator_screen{
+    background-color: rgb(86, 160, 86);
+    max-width:90%;
+    min-height: 10%;
+    max-height:15%;
+    margin:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+
+    border-radius:10px;
+    border: 3px solid black;
+
+    text-align: right;
+    padding-right:16px;
+    letter-spacing: 20px;
+
+}
+
+.calculator_buttons{
+    background-color: darkgray;
+    height:67.5%;
+    max-width:90%;
+    margin:auto;
+    padding: 12px;
+
+    border-radius:10px;
+
+}
+
+.button_rows{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+    margin-top: 10px;
+    max-width: 100%;
+    max-height: 20%
+}
+
+.calculator_buttons button{
+    width:135px;
+    max-width: 20%;
+    height:70px;
+    justify-content: center;
+    margin-left:17px;
+    aspect-ratio: 1;
+
+    font-weight: 450;
+    color:white;
+    background-color:rgb(128, 128, 128);
+}
+
+.first_button{
+    margin-left:0 !important;
+}
+
+
+button:hover{
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+.extras{
+    position:fixed;
+    right:15px;
+    bottom:15px;
+    background-color:rgb(0,0,0,0.2);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width:80%;
+    text-align:right;
+    font-size: large;
+}
